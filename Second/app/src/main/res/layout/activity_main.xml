@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="姓名:" />
+
+        <EditText
+            android:id="@+id/editTextForName"
+            android:layout_width="115dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="性别:" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupForSex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonForMale"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/radioButtonForFemale"
+                android:layout_width="64dp"
+                android:layout_height="match_parent"
+                android:gravity="center|center_vertical"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="爱好:" />
+
+        <CheckBox
+            android:id="@+id/checkBoxForSoccer"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:text="足球" />
+
+        <CheckBox
+            android:id="@+id/checkBoxForBasket"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:text="篮球" />
+
+        <CheckBox
+            android:id="@+id/checkBoxForPing"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:gravity="center|center_vertical"
+            android:text="乒乓球" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="年级:" />
+
+        <Spinner
+            android:id="@+id/spinnerForGrade"
+            android:layout_width="115dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonForSum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="点击总结" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="总结:" />
+
+        <EditText
+            android:id="@+id/editTextForSum"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:focusable="false"
+            android:maxLines="20"
+            android:gravity="left"/>
+
+    </LinearLayout>
+
+</LinearLayout>
