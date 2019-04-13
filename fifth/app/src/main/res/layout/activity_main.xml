@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="数字一：" />
+
+        <EditText
+            android:id="@+id/editForNumOne"
+            android:layout_width="128dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="数字二：" />
+
+        <EditText
+            android:id="@+id/editForNumTwo"
+            android:layout_width="128dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/buttonForBind"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="绑定" />
+
+    <Button
+        android:id="@+id/buttonForUnbind"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="取消绑定" />
+
+    <Button
+        android:id="@+id/buttonForSum"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="求和" />
+
+    <Button
+        android:id="@+id/buttonForCompare"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="比较" />
+
+    <TextView
+        android:id="@+id/textForResult"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="4dp"
+        android:textColor="#fa0400" />
+
+</LinearLayout>

@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId())
         {
             case R.id.buttonForSum:
-
                 String name = editTextForName.getText().toString();
                 if (name.trim().isEmpty())
                 {
