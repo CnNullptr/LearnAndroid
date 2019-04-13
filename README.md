@@ -1,4 +1,9 @@
-# LearnAndroid
+# 写在最前
+
+这是笔者第一次尝试开源，第一次认真学习 Git 和 Github 的使用，如果 README 或 COMMIT Message 写的不好请大家不吝赐教，但是代码都是经过仔细调试后确认无误的。
+
+# Learn Android
+
 江苏科技大学 32 课时移动系统软件课内实验代码
 
 # 实验内容
