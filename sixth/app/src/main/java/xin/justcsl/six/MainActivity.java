@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.buttonForDropAll:
                 //删除全部，没有约束条件
-                LitePal.deleteAll(Employee.class, null);
+                LitePal.deleteAll(Employee.class,null);
                 break;
 
             case R.id.buttonForDropById:
