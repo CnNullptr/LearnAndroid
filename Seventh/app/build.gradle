@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "xin.justcsl.seventh"
+        minSdkVersion 26
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //指明编译目标和源代码的 Java 版本，Okhttp 在 java 8+ 环境上运行必须的
+    compileOptions {
+        targetCompatibility = "8"
+        sourceCompatibility = "8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //litepal
+    implementation 'org.litepal.android:java:3.0.0'
+    //okhttp、Gson、Glide 都是从 https://mvnrepository.com 查询的
+    //okhttp
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //高德地图 API
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.android.support:support-v4:28.0.0-alpha1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

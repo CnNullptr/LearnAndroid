@@ -1,0 +1,29 @@
+卷 开发 的文件夹 PATH 列表
+卷序列号为 C47D-6E6D
+E:.
+├─app
+│  |
+│  └─src
+│      ├─main
+│      │  ├─java
+│      │  │  └─xin
+│      │  │      └─justcsl
+│      │  │          └─first
+│      │  └─res
+│      │      ├─drawable
+│      │      ├─drawable-v24
+│      │      ├─layout
+│      │      ├─mipmap-anydpi-v26
+│      │      ├─mipmap-hdpi
+│      │      ├─mipmap-mdpi
+│      │      ├─mipmap-xhdpi
+│      │      ├─mipmap-xxhdpi
+│      │      ├─mipmap-xxxhdpi
+│      │      └─values
+│      └─test
+│          └─java
+│              └─xin
+│                  └─justcsl
+│                      └─first
+└─gradle
+    └─wrapper
