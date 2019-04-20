@@ -61,6 +61,9 @@ public class WeatherActivity extends AppCompatActivity
     public DrawerLayout drawerLayout;
     private Button selectCityButton;
 
+    //todo 高德地图 web 服务 key
+    private static String webKey;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -167,7 +170,7 @@ public class WeatherActivity extends AppCompatActivity
 
     public void requestLives()
     {
-        String url = "https://restapi.amap.com/v3/weather/weatherInfo?key=79d1b7cebba1af2273156f9645cc44e2&extensions=base&city=" + selectedAdCode;
+        String url = "https://restapi.amap.com/v3/weather/weatherInfo?extensions=base&city=" + selectedAdCode + "&key" + webKey;
 
         HttpUtil.sendOkhttpRequest(url, new Callback()
         {
@@ -217,8 +220,7 @@ public class WeatherActivity extends AppCompatActivity
 
     public void requestForecast()
     {
-        String url = "https://restapi.amap.com/v3/weather/weatherInfo?key=79d1b7cebba1af2273156f9645cc44e2&extensions=all&city=" + selectedAdCode;
-
+        String url = "https://restapi.amap.com/v3/weather/weatherInfo?extensions=all&city=" + selectedAdCode + "&key" + webKey;
         HttpUtil.sendOkhttpRequest(url, new Callback()
         {
             @Override

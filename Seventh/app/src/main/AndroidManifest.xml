@@ -49,9 +49,10 @@
         <!-- 高德地图SDK需要的服务 -->
         <service android:name="com.amap.api.location.APSService" />
 
+        <!--fixme 输入申请到的 KEY-->
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="d11463bcae05ab5b8e2bf68932ceb3c9" />
+            android:value="" />
 
         <service
             android:name=".service.AutoUpdateService"
